@@ -1,17 +1,14 @@
-C = int(input())
-scores_list=[]
-count=0
+case = int(input())
 
-for _ in range(C):
-    scores_list.append(list(map(int,input().split())))
-    # for x in scores_list :
-# print(scores_list)
-for i in scores_list:
-    count=0
-    stock = i[0]
-    del i[0]
-    avg=(sum(i)/stock)
-    for _ in i:
-        if avg< _ :
-            count+=1
-    print("{:.3f}%".format(round((count/stock)*100,3)))
+for _ in range(case):
+    grade = list(map(int, input().split(" ")))
+    student = grade[0]
+    scores = grade[1:]
+    average = sum(scores) / student
+    above_student = 0
+    for score in scores:
+        if score > average:
+            above_student += 1
+
+    reslut = above_student / len(scores) * 100
+    print("%.3f"%reslut + "%")
