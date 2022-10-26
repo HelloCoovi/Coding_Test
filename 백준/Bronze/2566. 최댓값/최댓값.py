@@ -7,5 +7,4 @@ nums = sum(nums, [])
 
 
 print(max(nums))
-
-print(f"{nums.index(max(nums)) // 9 + 1} {nums.index(max(nums)) % 9 + 1}")
+print(nums.index(max(nums)) // 9 + 1, nums.index(max(nums)) % 9 + 1)
