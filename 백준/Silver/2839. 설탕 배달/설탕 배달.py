@@ -11,4 +11,3 @@ while num >= 0:
     reslut += 1
 else:
     print(-1)
-    
