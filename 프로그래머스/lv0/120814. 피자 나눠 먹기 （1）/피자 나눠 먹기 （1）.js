@@ -1,4 +1,3 @@
 function solution(n) {
-    var answer = 0;
-    return answer;
+    return Math.ceil(n / 7);
 }
