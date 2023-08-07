@@ -1,6 +1,5 @@
 function solution(n) {
     let answer = []
-    let origNum = n
     
     let i = 2
     while (i <= n) {
