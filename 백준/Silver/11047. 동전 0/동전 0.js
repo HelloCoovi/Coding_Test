@@ -9,10 +9,8 @@ const targetInput = input.slice(1).map(Number);
 for (let i = targetInput.length - 1; i >= 0; i--) {
   const coin = targetInput[i];
 
-  if (targetPrice / coin >= 1) {
-    result += Math.floor(targetPrice / coin);
-    targetPrice -= Math.floor(targetPrice / coin) * coin;
-  }
+  result += Math.floor(targetPrice / coin);
+  targetPrice %= coin;
 }
 
 console.log(result);
